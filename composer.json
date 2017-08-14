@@ -13,7 +13,7 @@
             "email": "maxi@sneekdigital.co.uk"
         }
     ],
-    "type": "project",
+    "type": "library",
     "require": {
         "php": ">=5.4",
         "illuminate/http": "^5.0"
