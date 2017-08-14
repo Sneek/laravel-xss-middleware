@@ -1,6 +1,6 @@
 {
     "name": "sneek/laravel-xss-middleware",
-    "description": "Simple XSS middlware to strip all tags and encode all entites from a user",
+    "description": "Simple Laravel XSS middlware to strip all tags and encode all entities from a user",
     "keywords": ["laravel", "xss", "middleware"],
     "license": "GPL-3.0",
     "authors": [
