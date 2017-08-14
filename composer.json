@@ -2,7 +2,7 @@
     "name": "sneek/laravel-xss-middleware",
     "description": "Simple XSS middlware to strip all tags and encode all entites from a user",
     "keywords": ["laravel", "xss", "middleware"],
-    "license": "GNU",
+    "license": "GPL-3.0",
     "authors": [
         {
             "name": "Cristian Giordano",
