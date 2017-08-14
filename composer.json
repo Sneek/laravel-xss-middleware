@@ -1,0 +1,29 @@
+{
+    "name": "sneek/laravel-xss-middleware",
+    "description": "Simple XSS middlware to strip all tags and encode all entites from a user",
+    "keywords": ["laravel", "xss", "middleware"],
+    "license": "GNU",
+    "authors": [
+        {
+            "name": "Cristian Giordano",
+            "email": "cristian@sneekdigital.co.uk"
+        },
+        {
+            "name": "Maxi Monge",
+            "email": "maxi@sneekdigital.co.uk"
+        }
+    ],
+    "type": "project",
+    "require": {
+        "php": ">=5.4",
+        "illuminate/http": "^5.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sneek\\Http\\": "src/"
+        }
+    }
+}
