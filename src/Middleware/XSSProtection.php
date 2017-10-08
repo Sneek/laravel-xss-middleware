@@ -11,7 +11,11 @@ class XSSProtection
     {
         $input = $request->input();
 
-        array_walk_recursive($input, function (&$input) {
+        array_walk_recursive($input, function (&$input, $key) {
+            if (starts_with($key, 'html_')) {
+                return;
+            }
+
             $input = e(strip_tags($input));
         });
 

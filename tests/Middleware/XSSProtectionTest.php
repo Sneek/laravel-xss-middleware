@@ -65,4 +65,17 @@ class XSSProtectionTest extends TestCase
 
         $this->assertEquals('&quot;&#039;Four &gt; Three &amp; Four &lt; Five&#039;&quot;', $actual['nested']['foo']);
     }
+
+    /** @test */
+    function it_will_ignore_input_with_html_prefix()
+    {
+        $request = Request::create('/foo', 'POST', ['html_foo' => '<p>Hello</p>', 'html_bar' => '<p>World</p>']);
+
+        $actual = $this->SUT->handle($request, function ($request) {
+            return $request;
+        });
+
+        $this->assertEquals('<p>Hello</p>', $actual['html_foo']);
+        $this->assertEquals('<p>World</p>', $actual['html_bar']);
+    }
 }
